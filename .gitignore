@@ -89,3 +89,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# SisNe
+.*
+*.pyc
+
+!/.gitignore
