@@ -163,6 +163,13 @@
                 <strong>Fiscal Position Remark:</strong>
                 <span t-field="o.fiscal_position_id.note"/>
             </p>
+
+            <p>
+                <br/>
+                <br/>
+                <strong>Temperatura de Entrega: __________</strong>
+            </p>
+
         </div>
     </xpath>
 </template>
