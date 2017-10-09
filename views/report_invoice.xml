@@ -12,8 +12,12 @@
                 <div name="invoice_address" class="col-xs-5 col-xs-offset-7">
                     <address t-field="o.partner_id"
                         t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
+                </div>
+                <div name="rnc" class="col-xs-5 col-xs-offset-7">
                     <span t-if="o.partner_id.rnc">RNC: <span t-field="o.partner_id.rnc"/></span>
                     <span t-if="o.partner_id.cedula">RNC: <span t-field="o.partner_id.cedula"/></span>
+                    <span t-if="o.partner_id.parent_id.rnc">RNC: <span t-field="o.partner_id.parent_id.rnc"/></span>
+                    <span t-if="o.partner_id.parent_id.cedula">RNC: <span t-field="o.partner_id.parent_id.cedula"/></span>
                 </div>
             </div>
 
@@ -168,6 +172,20 @@
                 <br/>
                 <br/>
                 <strong>Temperatura de Entrega: __________</strong>
+                <br/>
+                <br/>
+                <br/>
+                <strong>Entregado por: ___________________________________________  Recibido por: ___________________________________________</strong>
+                <br/>
+                <br/>
+                <br/>
+                <strong>
+                Comentarios: ________________________________________________________________________________________________________
+
+                <br/>
+                <br/>
+                        ________________________________________________________________________________________________________________________
+                </strong>
             </p>
 
         </div>
